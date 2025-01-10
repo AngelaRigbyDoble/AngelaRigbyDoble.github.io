@@ -1,0 +1,26 @@
+/* Reset default margins and paddings for consistency */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+nav ul {
+    list-style: none; /* Removes bullets */
+    display: flex;    /* Aligns items horizontally */
+    justify-content: flex-start; /* Aligns items to the left */
+}
+
+nav ul li {
+    margin-right: 20px; /* Adds space between items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: black;          /* Sets the link color */
+    font-weight: bold;     /* Makes the text bold */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underlines link on hover */
+}
