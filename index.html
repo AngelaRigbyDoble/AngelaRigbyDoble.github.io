@@ -5,9 +5,12 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+			rel="stylesheet"
+		/>
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,18 +43,20 @@
 				<li><i>All pictures available as signed prints - A3: £12, A4: £7.50 (plus postage and packaging)</i></li>
 				<li><i>Commissions welcome.</i></li>
 			</ul>
-		</div> 
+		</div>
 
-		<select id="categoryFilter" type="categories">
-			<option value="all">All</option>
-			<option value="The Garden">The Garden</option>
-			<option value="Animals">Animals</option>
-			<option value="People">People</option>
-			<option value="Places">Places</option>
-			<option value="Other">Other</option>
-			<!-- Add more categories as needed -->
-		</select>
-		
+		<div class="category-section">
+			<select id="categoryFilter" type="categories">
+				<option value="all">All</option>
+				<option value="The Garden">The Garden</option>
+				<option value="Animals">Animals</option>
+				<option value="People">People</option>
+				<option value="Places">Places</option>
+				<option value="Other">Other</option>
+				<!-- Add more categories as needed -->
+			</select>
+		</div>
+
 		<!-- Masonry container where images will be appended -->
 		<div class="masonry"></div>
 
@@ -60,7 +65,5 @@
 		</div>
 		<script src="picture_loader.js"></script>
 		<script src="masonry-formatter.js"></script>
-		
 	</main>
 </html>
- 
