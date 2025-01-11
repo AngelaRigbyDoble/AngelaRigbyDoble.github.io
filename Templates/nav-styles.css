@@ -1,9 +1,12 @@
 nav {
-	background-color: white;
-	padding: 1em 0;
-	border-bottom: 1px solid #ccc; /* Adjust color and thickness */
-    padding-bottom: 10px; /* Optional: Add spacing below the text */
-  }
+    background-color: white;
+    padding: 1em 0; /* Space above and below the nav content */
+    border-bottom: 1px solid #ccc; /* Grey line under the nav */
+    text-align: center; /* Center-align text/content inside the nav */
+    box-sizing: border-box; /* Include padding and border in the element's dimensions */
+}
+
+
   
   nav ul {
 	list-style: none;
@@ -15,14 +18,14 @@ nav {
   nav ul li {
 	display: inline-block;
 	position: relative; /* Needed for positioning dropdowns */
-	font-size: 18px;
+	font-size: 20px;
 	margin: 0 15px;
   }
   
   nav ul li a {
 	color: black;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 20px;
 	padding: 1em 0; /* Add padding to align with dropdowns */
 	display: block;
   }
@@ -42,54 +45,4 @@ nav {
 	text-decoration: none;
 	color: inherit; /* Optional: Use the inherited color for the link */
 }
-  
-  /* Dropdown menu styles */
-  .dropdown-menu {
-	display: none; /* Hide dropdown by default */
-	position: absolute;
-	background-color: white;
-	padding: 2px;
-	border: 2px solid grey;
-	list-style: none;
-	min-width: 160px;
-	top: 100%; /* Position dropdown below the parent menu */
-	left: 0;
-	text-align: left;
-	translate: -36% 0%;
-	z-index: 1000; /* Ensure the dropdown is above other elements */
-  }
 
-  /* Mobile-specific styles */
-  @media (max-width: 768px) {
-	.dropdown-menu {
-	  position: static; /* Let the dropdown flow naturally in mobile layout */
-	  min-width: 100%; /* Expand dropdown to the full width */
-	  translate: none; /* Reset translation */
-	  margin-top: 10px; /* Add spacing from the main menu */
-	}
-  
-	.dropdown-menu li {
-	  text-align: center; /* Center-align dropdown items for better mobile layout */
-	}
-  }
-  
-  .dropdown-menu li {
-	margin: 0; /* Remove margin for dropdown items */
-	display: block;
-  }
-  
-  .dropdown-menu li a {
-	padding: 10px 15px; /* Add padding for dropdown links */
-	text-decoration: none;
-	font-size: 16px; /* Slightly smaller than main menu */
-  }
-  
-  .dropdown-menu li a:hover {
-	background-color: #D3D3D3; /* Background change on hover */
-	text-decoration: none;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-menu {
-	display: block;
-  }

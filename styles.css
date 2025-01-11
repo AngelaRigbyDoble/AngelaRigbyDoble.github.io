@@ -20,49 +20,74 @@ body {
 	font-size: clamp(1rem, 2vw, 2rem);
 }
 
+/* Masonry layout */
 .masonry {
-	column-gap: 10px; /* Space between columns */
-	margin: 10%;
+  column-gap: 10px;
+  margin: 1% 5%; /* Adjust margin for smaller screens */
 }
 
+/* Masonry item */
 .masonry-item {
-	break-inside: avoid; /* Avoid breaking the item */
-	margin-bottom: 20px; /* Space between rows */
-	position: relative;
-	overflow: hidden;
+  break-inside: avoid;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Images inside masonry items */
 .masonry-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
 .masonry-item:hover img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
+/* Description styling */
 .masonry-item .description {
-    position: absolute;
-    top: 0; /* Align at the top */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    bottom: 0; /* Align at the bottom */
-	display: flex; /* Use flexbox to center the text */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    color: white;
-    padding: 20px;
-    display: none; /* Hide description by default */
-    font-size: 20px;
-	font-family: "Lato", serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 20px;
+  display: none;
+  font-size: 20px;
+  font-family: "Lato", serif;
+  text-align: center; /* Center-align the text */
 }
 
+/* Show description on hover */
 .masonry-item:hover .description {
-    display: block; /* Show description on hover */
+  display: block;
 }
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .masonry {
+      column-gap: 5px; /* Reduce column gap on smaller screens */
+      margin: 2%; /* Further reduce margin for smaller devices */
+  }
+
+  .masonry-item img {
+      transition: none; /* Disable scaling on hover for smaller screens */
+  }
+
+  .masonry-item .description {
+      display: flex; /* Always show text on smaller screens */
+      font-size: 16px; /* Adjust font size for better readability */
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
 
 
 .about-container {
@@ -118,6 +143,7 @@ body {
 	display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 18px;
 }
 
 .sales-columm {
@@ -226,6 +252,10 @@ a {
     color: black;
 }
 
+.category-section {
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 /* Style the dropdown */
 #categoryFilter {
@@ -234,8 +264,10 @@ a {
   border: 1px solid black; /* Optional: Add border for clarity */
   border-radius: 5px; /* Optional: Rounded corners */
   background-color: white; /* Optional: Background color */
-  max-width: 30%;
+  max-width: 400px;
 	font-family: "Lato", serif;
+  margin: 0%;
+  margin-right: 5%;
 }
 
 /* Position the dropdown on the left side of the page */
@@ -244,7 +276,17 @@ a {
   z-index: 100; /* Ensure it stays above other elements */
 }
 
-/* Optional: You can add some padding to the body to account for the fixed position */
-body {
-  padding-left: 100px; /* Adjust the page content so it doesn’t overlap with the dropdown */
+@media (max-width: 768px) {
+  #categoryFilter {
+    margin-right: 2%; /* Further reduce margin for smaller devices */
+    margin-left: 2%; /* Further reduce margin for smaller devices */
+  }
+}
+
+@media (max-width: 900px) {
+  #categoryFilter {
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
