@@ -1,198 +1,94 @@
+
 [
-    {
-        "path": "Images/Webps/apple tree.webp",
-        "category": "Nature"
-    },
-    {
-        "path": "Images/Webps/be still.webp",
-        "category": "Art"
-    },
-    {
-        "path": "Images/Webps/bear scratching.webp",
-        "category": "Wildlife"
-    },
-    {
-        "path": "Images/Webps/bonfire.webp",
-        "category": "Seasonal"
-    },
-    {
-        "path": "Images/Webps/carnations.webp",
-        "category": "Floral"
-    },
-    {
-        "path": "Images/Webps/caspian sea.webp",
-        "category": "Landscape"
-    },
-    {
-        "path": "Images/Webps/courgette 1.webp",
-        "category": "Food"
-    },
-    {
-        "path": "Images/Webps/daisies.webp",
-        "category": "Floral"
-    },
-    {
-        "path": "Images/Webps/do you love me 1.webp",
-        "category": "Art"
-    },
-    {
-        "path": "Images/Webps/dog in a meadow.webp",
-        "category": "Wildlife"
-    },
-    {
-        "path": "Images/Webps/evening.webp",
-        "category": "Landscape"
-    },
-    {
-        "path": "Images/Webps/flight to egypt 2.webp",
-        "category": "Art"
-    },
-    {
-        "path": "Images/Webps/flight to egypt.webp",
-        "category": "Art"
-    },
-    {
-        "path": "Images/Webps/forgetmenots.webp",
-        "category": "Floral"
-    },
-    {
-        "path": "Images/Webps/fu on the slide.webp",
-        "category": "People"
-    },
-    {
-        "path": "Images/Webps/george at huntsmoor.webp",
-        "category": "Landscape"
-    },
-    {
-        "path": "Images/Webps/girl with chadooris 1.webp",
-        "category": "People"
-    },
-    {
-        "path": "Images/Webps/girl with chadooris 2.webp",
-        "category": "People"
-    },
-    {
-        "path": "Images/Webps/huntsmoor in spring.webp",
-        "category": "Landscape"
-    },
-    {
-        "path": "Images/Webps/huntsmoor in winter.webp",
-        "category": "Landscape"
-    },
-    {
-        "path": "Images/Webps/kathie.webp",
-        "category": "Portrait"
-    },
-    {
-        "path": "Images/Webps/laura and olive.webp",
-        "category": "Portrait"
-    },
-    {
-        "path": "Images/Webps/lavaterra.webp",
-        "category": "Art"
-    },
-    {
-        "path": "Images/Webps/leopard.webp",
-        "category": "Wildlife"
-    },
-    {
-        "path": "Images/Webps/mei mei last summer.webp",
-        "category": "People"
-    },
-    {
-        "path": "Images/Webps/mei mei under blue hat.webp",
-        "category": "People"
-    },
-    {
-        "path": "Images/Webps/mei mei under snake hat.webp",
-        "category": "People"
-    },
-    {
-        "path": "Images/Webps/mum feeding the cat.webp",
-        "category": "People"
-    },
-    {
-        "path": "Images/Webps/newborn zebra.webp",
-        "category": "Wildlife"
-    },
-    {
-        "path": "Images/Webps/orange berries.webp",
-        "category": "Food"
-    },
-    {
-        "path": "Images/Webps/parrots.webp",
-        "category": "Wildlife"
-    },
-    {
-        "path": "Images/Webps/polar bear exercising.webp",
-        "category": "Wildlife"
-    },
-    {
-        "path": "Images/Webps/prayer.webp",
-        "category": "Art"
-    },
-    {
-        "path": "Images/Webps/rainbow.webp",
-        "category": "Nature"
-    },
-    {
-        "path": "Images/Webps/red apples.webp",
-        "category": "Food"
-    },
-    {
-        "path": "Images/Webps/red elephant.webp",
-        "category": "Wildlife"
-    },
-    {
-        "path": "Images/Webps/rescue pony.webp",
-        "category": "Wildlife"
-    },
-    {
-        "path": "Images/Webps/saint from the book of kells.webp",
-        "category": "Art"
-    },
-    {
-        "path": "Images/Webps/school girl.webp",
-        "category": "People"
-    },
-    {
-        "path": "Images/Webps/star.webp",
-        "category": "Nature"
-    },
-    {
-        "path": "Images/Webps/talk to me.webp",
-        "category": "Art"
-    },
-    {
-        "path": "Images/Webps/the back door.webp",
-        "category": "People"
-    },
-    {
-        "path": "Images/Webps/the revolution.webp",
-        "category": "Art"
-    },
-    {
-        "path": "Images/Webps/the word was made flesh.webp",
-        "category": "Art"
-    },
-    {
-        "path": "Images/Webps/tree of life.webp",
-        "category": "Nature"
-    },
-    {
-        "path": "Images/Webps/two bonfires.webp",
-        "category": "Seasonal"
-    },
-    {
-        "path": "Images/Webps/volunteers.webp",
-        "category": "People"
-    },
-    {
-        "path": "Images/Webps/where i live.webp",
-        "category": "People"
-    },
-    {
-        "path": "Images/Webps/who am i.webp",
-        "category": "Art"
-    }
-]
+    { "path": "Images\\Webps\\apple tree.webp", "category": "The Garden" },
+    { "path": "Images\\Webps\\be still.webp", "category": "Other" },
+    { "path": "Images\\Webps\\bear scratching.webp", "category": "Animals" },
+    { "path": "Images\\Webps\\bonfire.webp", "category": "Places" },
+    { "path": "Images\\Webps\\carnations.webp", "category": "The Garden" },
+    { "path": "Images\\Webps\\caspian sea.webp", "category": "People" },
+    { "path": "Images\\Webps\\courgette 1.webp", "category": "The Garden" },
+    { "path": "Images\\Webps\\daisies.webp", "category": "The Garden" },
+    { "path": "Images\\Webps\\do you love me 1.webp", "category": "Other" },
+    { "path": "Images\\Webps\\dog in a meadow.webp", "category": "Animals" },
+    { "path": "Images\\Webps\\evening.webp", "category": "Places" },
+    { "path": "Images\\Webps\\flight to egypt 2.webp", "category": "Other" },
+    { "path": "Images\\Webps\\flight to egypt.webp", "category": "Other" },
+    { "path": "Images\\Webps\\forgetmenots.webp", "category": "The Garden" },
+    { "path": "Images\\Webps\\fu on the slide.webp", "category": "People" },
+    { "path": "Images\\Webps\\george at huntsmoor.webp", "category": "Places" },
+    { "path": "Images\\Webps\\girl with chadooris 1.webp", "category": "People" },
+    { "path": "Images\\Webps\\girl with chadooris 2.webp", "category": "People" },
+    { "path": "Images\\Webps\\huntsmoor in spring.webp", "category": "Places" },
+    { "path": "Images\\Webps\\huntsmoor in winter.webp", "category": "Places" },
+    { "path": "Images\\Webps\\kathie.webp", "category": "People" },
+    { "path": "Images\\Webps\\laura and olive.webp", "category": "People" },
+    { "path": "Images\\Webps\\lavaterra.webp", "category": "The Garden" },
+    { "path": "Images\\Webps\\leopard.webp", "category": "Animals" },
+    { "path": "Images\\Webps\\mei mei last summer.webp", "category": "People" },
+    { "path": "Images\\Webps\\mei mei under blue hat.webp", "category": "People" },
+    { "path": "Images\\Webps\\mei mei under snake hat.webp", "category": "People" },
+    { "path": "Images\\Webps\\mum feeding the cat.webp", "category": "People" },
+    { "path": "Images\\Webps\\newborn zebra.webp", "category": "Animals" },
+    { "path": "Images\\Webps\\orange berries.webp", "category": "The Garden" },
+    { "path": "Images\\Webps\\parrots.webp", "category": "Animals" },
+    { "path": "Images\\Webps\\polar bear exercising.webp", "category": "Animals" },
+    { "path": "Images\\Webps\\prayer.webp", "category": "People" },
+    { "path": "Images\\Webps\\rainbow.webp", "category": "Places" },
+    { "path": "Images\\Webps\\red apples.webp", "category": "The Garden" },
+    { "path": "Images\\Webps\\red elephant.webp", "category": "Animals" },
+    { "path": "Images\\Webps\\rescue pony.webp", "category": "Animals" },
+    { "path": "Images\\Webps\\saint from the book of kells.webp", "category": "Other" },
+    { "path": "Images\\Webps\\school girl.webp", "category": "People" },
+    { "path": "Images\\Webps\\star.webp", "category": "Other" },
+    { "path": "Images\\Webps\\talk to me.webp", "category": "People" },
+    { "path": "Images\\Webps\\the back door.webp", "category": "Places" },
+    { "path": "Images\\Webps\\the revolution.webp", "category": "People" },
+    { "path": "Images\\Webps\\the word was made flesh.webp", "category": "Other" },
+    { "path": "Images\\Webps\\tree of life.webp", "category": "The Garden" },
+    { "path": "Images\\Webps\\two bonfires.webp", "category": "Places" },
+    { "path": "Images\\Webps\\volunteers.webp", "category": "People" },
+    { "path": "Images\\Webps\\where i live.webp", "category": "People" },
+    { "path": "Images\\Webps\\who am i.webp", "category": "People" },
+    { "path": "Images\\apple rack.webp", "category": "The Garden" },
+    { "path": "Images\\apple tree in blossom.webp", "category": "The Garden" },
+    { "path": "Images\\apple tree.webp", "category": "The Garden" },
+    { "path": "Images\\broody hen.webp", "category": "Animals" },
+    { "path": "Images\\bulldog.webp", "category": "Animals" },
+    { "path": "Images\\chapel in spring.webp", "category": "Places" },
+    { "path": "Images\\cherries on twig.webp", "category": "The Garden" },
+    { "path": "Images\\cherry twig in april.webp", "category": "The Garden" },
+    { "path": "Images\\conwy churchyard.webp", "category": "Places" },
+    { "path": "Images\\daisy on the lawn.webp", "category": "Places" },
+    { "path": "Images\\do you love me.webp", "category": "Other" },
+    { "path": "Images\\fu and friends.webp", "category": "People" },
+    { "path": "Images\\fu blowing bubbles.webp", "category": "People" },
+    { "path": "Images\\fu reading.webp", "category": "People" },
+    { "path": "Images\\Huntsmoor in winter.webp", "category": "Places" },
+    { "path": "Images\\huntsmoor tea time.webp", "category": "Places" },
+    { "path": "Images\\hypericum seeds.webp", "category": "The Garden" },
+    { "path": "Images\\iraqis voting.webp", "category": "People" },
+    { "path": "Images\\last supper john.webp", "category": "People" },
+    { "path": "Images\\lost child.webp", "category": "People" },
+    { "path": "Images\\lost coin.webp", "category": "People" },
+    { "path": "Images\\lost lamb.webp", "category": "People" },
+    { "path": "Images\\love is stronger than death.webp", "category": "Other" },
+    { "path": "Images\\mei mei dressing up 1.webp", "category": "People" },
+    { "path": "Images\\mei mei dressing up 2.webp", "category": "People" },
+    { "path": "Images\\mulberry in bud.webp", "category": "The Garden" },
+    { "path": "Images\\night visitor.webp", "category": "Places" },
+    { "path": "Images\\ozzie.webp", "category": "Animals" },
+    { "path": "Images\\refugee.webp", "category": "People" },
+    { "path": "Images\\ripe apples.webp", "category": "The Garden" },
+    { "path": "Images\\seacows.webp", "category": "Animals" },
+    { "path": "Images\\sealions.webp", "category": "Animals" },
+    { "path": "Images\\seaslug.webp", "category": "Animals" },
+    { "path": "Images\\squiggles.webp", "category": "Other" },
+    { "path": "Images\\sunflower.webp", "category": "The Garden" },
+    { "path": "Images\\the big bang.webp", "category": "Animals" },
+    { "path": "Images\\the light shines.webp", "category": "Other" },
+    { "path": "Images\\theophile.webp", "category": "People" },
+    { "path": "Images\\up the cherry tree.webp", "category": "The Garden" },
+    { "path": "Images\\willow tree.webp", "category": "The Garden" },
+    { "path": "Images\\willow twigs.webp", "category": "The Garden" }
+  ]
+  

@@ -5,26 +5,6 @@ ul {
 	padding: 0;
 }
 
-/* Style the navigation bar */
-nav ul {
-	list-style: none; /* Removes bullets */
-	display: flex; /* Aligns items horizontally */
-	justify-content: flex-start; /* Aligns items to the left */
-}
-
-nav ul li {
-	margin-right: 20px; /* Adds space between items */
-}
-
-nav ul li a {
-	text-decoration: none; /* Removes underline from links */
-	color: grey; /* Sets the link color */
-	font-weight: bold; /* Makes the text bold */
-}
-
-nav ul li a:hover {
-	text-decoration: underline; /* Underlines link on hover */
-}
 
 body {
 	font-family: "Lora", serif;
@@ -34,10 +14,15 @@ body {
 	padding: 0;
 }
 
+.homepage-bulletpoints {
+	margin: 2% 10% 2%;
+	padding: 2px
+}
+
 .masonry {
 	column-count: 3; /* Number of columns */
-	column-gap: 20px; /* Space between columns */
-	margin: 20px;
+	column-gap: 10px; /* Space between columns */
+	margin: 80px;
 }
 
 .masonry-item {
