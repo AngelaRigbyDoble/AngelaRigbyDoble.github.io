@@ -1,0 +1,101 @@
+/* Reset default margins and paddings for consistency */
+body,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Style the navigation bar */
+nav ul {
+	list-style: none; /* Removes bullets */
+	display: flex; /* Aligns items horizontally */
+	justify-content: flex-start; /* Aligns items to the left */
+}
+
+nav ul li {
+	margin-right: 20px; /* Adds space between items */
+}
+
+nav ul li a {
+	text-decoration: none; /* Removes underline from links */
+	color: grey; /* Sets the link color */
+	font-weight: bold; /* Makes the text bold */
+}
+
+nav ul li a:hover {
+	text-decoration: underline; /* Underlines link on hover */
+}
+
+body {
+	font-family: "Lora", serif;
+	background-color: white; /* Black background */
+	color: black; /* White text for contrast */
+	margin: 0;
+	padding: 0;
+}
+
+.masonry {
+	column-count: 3; /* Number of columns */
+	column-gap: 20px; /* Space between columns */
+	margin: 20px;
+}
+
+.masonry-item {
+	break-inside: avoid; /* Avoid breaking the item */
+	margin-bottom: 20px; /* Space between rows */
+	overflow: hidden;
+}
+
+.masonry-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+	transition: transform 0.3s ease;
+}
+
+.masonry-item:hover img {
+	transform: scale(1.05);
+}
+
+.about-container {
+	display: flex; /* Use flexbox to create a row layout */
+	align-items: center; /* Align items at the top */
+	padding: 10px; /* Optional padding */
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+@media (max-width: 750px) {
+	.about-container {
+		flex-direction: column;
+	}
+}
+
+.about-left-column {
+	flex: 1; /* Adjust flex value as needed */
+	padding: 2%;
+}
+
+.about-right-column {
+	flex: 1;
+	flex-direction: column;
+}
+
+.about-image {
+	max-width: 100%; /* Responsive image */
+	height: auto; /* Maintain aspect ratio */
+}
+
+.about-content h1 {
+	text-align: left;
+}
+
+.about-content {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	text-align: left;
+	width: 90%;
+	line-height: 1.6;
+}
