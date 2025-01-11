@@ -43,12 +43,12 @@ body {
 }
 
 .about-container {
-	display: flex; /* Use flexbox to create a row layout */
-	align-items: center; /* Align items at the top */
-	padding: 10px; /* Optional padding */
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center; /* Centers the content inside the container */
+	margin: 0 auto; /* Centers the container itself horizontally */
+	max-width: 1200px; /* Optional: set a width limit */
+	width: 100%; /* Ensure it spans its container */
 }
 
 @media (max-width: 750px) {
@@ -59,17 +59,7 @@ body {
 
 .about-left-column {
 	flex: 1; /* Adjust flex value as needed */
-	padding: 2%;
-}
-
-.about-right-column {
-	flex: 1;
-	flex-direction: column;
-}
-
-.about-image {
-	max-width: 100%; /* Responsive image */
-	height: auto; /* Maintain aspect ratio */
+	padding: 5%;
 }
 
 .about-content h1 {
@@ -80,7 +70,16 @@ body {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	text-align: left;
 	width: 90%;
 	line-height: 1.6;
+}
+
+.about-right-column {
+	flex: 1;
+	flex-direction: column;
+}
+
+.about-image {
+	max-width: 100%; /* Responsive image */
+	height: auto; /* Maintain aspect ratio */
 }

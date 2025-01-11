@@ -30,8 +30,14 @@ nav {
 
   nav h1, .nav-title {
 	text-align: center;
-	color: black
+	color: black;
+	font-size: 4rem
   }
+
+  h1 a {
+	text-decoration: none;
+	color: inherit; /* Optional: Use the inherited color for the link */
+}
   
   /* Dropdown menu styles */
   .dropdown-menu {
