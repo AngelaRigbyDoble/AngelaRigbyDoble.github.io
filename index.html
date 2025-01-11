@@ -12,6 +12,8 @@
 			rel="stylesheet"
 		/>
 
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Angela Rigby Doble</title>
@@ -45,24 +47,26 @@
 			</ul>
 		</div>
 
-		<div class="category-section">
-			<select id="categoryFilter" type="categories">
-				<option value="all">All</option>
-				<option value="The Garden">The Garden</option>
-				<option value="Animals">Animals</option>
-				<option value="People">People</option>
-				<option value="Places">Places</option>
-				<option value="Other">Other</option>
-				<!-- Add more categories as needed -->
-			</select>
+		<div class="middle-bar">
+			<div class="social-media-icons">
+				<a href="https://www.facebook.com/ARDartandwriting?locale=en_GB" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.instagram.com/arigbyd/" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+			<div class="category-section">
+				<select id="categoryFilter" type="categories">
+					<option value="all">All</option>
+					<option value="The Garden">The Garden</option>
+					<option value="Animals">Animals</option>
+					<option value="People">People</option>
+					<option value="Places">Places</option>
+					<option value="Other">Other</option>
+					<!-- Add more categories as needed -->
+				</select>
+			</div>
 		</div>
 
 		<!-- Masonry container where images will be appended -->
 		<div class="masonry"></div>
-
-		<div class="masonry">
-			<!-- Add / modify images in images.json -->
-		</div>
 		<script src="picture_loader.js"></script>
 		<script src="masonry-formatter.js"></script>
 	</main>
