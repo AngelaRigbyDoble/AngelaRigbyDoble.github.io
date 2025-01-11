@@ -4,6 +4,15 @@ nav.mobile-nav {
 	padding: 1em 0;
   }
   
+
+.nav-title, h1 {
+	text-align: center;
+	text-decoration: none;
+	font-family: "Lora", serif;
+	color: black;
+	font-size: 2rem
+}
+
   .mobile-nav-header {
 	display: flex;
 	justify-content: space-between;
