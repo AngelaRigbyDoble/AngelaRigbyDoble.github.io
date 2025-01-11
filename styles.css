@@ -20,23 +20,55 @@ body {
 }
 
 .masonry {
-	column-count: 3; /* Number of columns */
-	column-gap: 10px; /* Space between columns */
-	margin: 80px;
+    column-gap: 10px; /* Space between columns */
+    margin: 5%;
 }
 
 .masonry-item {
-	break-inside: avoid; /* Avoid breaking the item */
-	margin-bottom: 20px; /* Space between rows */
-	overflow: hidden;
+    break-inside: avoid; /* Avoid breaking the item */
+    margin-bottom: 20px; /* Space between rows */
+    overflow: hidden;
 }
 
 .masonry-item img {
-	width: 100%;
-	height: auto;
-	display: block;
-	transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
 }
+
+/* Media queries to adjust the column count */
+/*
+@media (max-width: 400px) {
+    .masonry {
+        column-count: 1;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    .masonry {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .masonry {
+        column-count: 4;
+    }
+}
+
+@media (min-width: 1601px) {
+    .masonry {
+        column-count: 5;
+    }
+}
+*/
 
 .masonry-item:hover img {
 	transform: scale(1.05);
