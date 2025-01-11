@@ -7,7 +7,7 @@ ul {
 
 
 body {
-	font-family: "Lora", serif;
+	font-family: "Lato", serif;
 	background-color: white; /* Black background */
 	color: black; /* White text for contrast */
 	margin: 0;
@@ -16,31 +16,55 @@ body {
 
 .homepage-bulletpoints {
 	margin: 2% 10% 2%;
-	padding: 2px
+	padding: 2px;
+	font-size: 25px;
 }
 
 .masonry {
-	column-count: 3; /* Number of columns */
-	column-gap: 10px; /* Space between columns */
-	margin: 80px;
+    column-count: 3; /* Number of columns */
+    column-gap: 10px; /* Space between columns */
+    margin: 20px;
 }
 
 .masonry-item {
-	break-inside: avoid; /* Avoid breaking the item */
-	margin-bottom: 20px; /* Space between rows */
-	overflow: hidden;
+    break-inside: avoid; /* Avoid breaking the item */
+    margin-bottom: 20px; /* Space between rows */
+    position: relative;
+    overflow: hidden;
 }
 
 .masonry-item img {
-	width: 100%;
-	height: auto;
-	display: block;
-	transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
 .masonry-item:hover img {
-	transform: scale(1.05);
+    transform: scale(1.05);
 }
+
+.masonry-item .description {
+    position: absolute;
+    top: 0; /* Align at the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Align at the bottom */
+	display: flex; /* Use flexbox to center the text */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    display: none; /* Hide description by default */
+    font-size: 20px;
+	font-family: "Lato", serif;
+}
+
+.masonry-item:hover .description {
+    display: block; /* Show description on hover */
+}
+
 
 .about-container {
 	display: flex;
@@ -60,6 +84,7 @@ body {
 .about-left-column {
 	flex: 1; /* Adjust flex value as needed */
 	padding: 5%;
+	font-size: 18px;
 }
 
 .about-content h1 {
@@ -82,4 +107,99 @@ body {
 .about-image {
 	max-width: 100%; /* Responsive image */
 	height: auto; /* Maintain aspect ratio */
+}
+
+.sales-content {
+	display: flex;
+	align-items: center; /* Center vertically */
+	justify-content: center; /* Center horizontally */
+	height: 100vh; /* Optional: Full viewport height */
+	text-align: center; /* Center align text (for inline content) */
+}
+
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid black; /* Gray border */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-family: "Lora", serif;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Lora", serif;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: grey;
+}
+
+/* Add a background color and some padding around the form */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  align-content: space-around;
+}
+
+.contact-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.contact-container > form {
+  max-width: 50%;
+}
+
+@media (max-width: 750px) {
+  .contact-container > form {
+    max-width: 90%;
+  }
+}
+
+.thankyou-text {
+  padding: 5%;
+  text-align: center;
+}
+
+.thankyou-text > button {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Lora", serif;
+}
+
+.thankyou-text a {
+  color: black;
+}
+
+.thankyou-text > button:hover {
+  background-color: grey;
+}
+
+
+a {
+    color: black;
 }

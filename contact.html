@@ -5,10 +5,6 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Angela Rigby Doble</title>
@@ -33,22 +29,30 @@
 		<custom-nav></custom-nav>
 	</body>
 
-	<main>
-		<div class="homepage-bulletpoints">
-			<ul>
-				<li><i>All dimensions given are for originals</i></li>
-				<li><i>All pictures available as signed prints - A3: £12, A4: £7.50 (plus postage and packaging)</i></li>
-				<li><i>Commissions welcome.</i></li>
-			</ul>
-		</div> 
 
-		<div class="masonry">
-			<!-- Add / modify images in images.json -->
-		</div>
-		<script src="picture_loader.js"></script>
+<div class="contact-text">
+    <h2>Contact</h2>
+</div>
 
+<div class="contact-container">
+    <form target="_blank" action="https://formsubmit.co/4f80c11dd30a74cfcb35bba67fc5d9df" method="POST">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-		
-	</main>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="youremail@email.com">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+        <input type="hidden" name="_next" value="https://angelarigbydoble.github.io/contact.thankyou.html">
+        <input type="hidden" name="_autoresponse" value="Thank you for getting in touch. I will contact you as soon as possible.">
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
 </html>
- 

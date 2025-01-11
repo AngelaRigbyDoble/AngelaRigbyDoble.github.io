@@ -1,6 +1,8 @@
 nav {
 	background-color: white;
 	padding: 1em 0;
+	border-bottom: 1px solid #ccc; /* Adjust color and thickness */
+    padding-bottom: 10px; /* Optional: Add spacing below the text */
   }
   
   nav ul {
@@ -29,6 +31,7 @@ nav {
   }
 
   nav h1, .nav-title {
+	font-family: "Lora", serif;
 	text-align: center;
 	color: black;
 	font-size: 4rem
@@ -54,7 +57,7 @@ nav {
 	translate: -20% 0%;
 	z-index: 1000; /* Ensure the dropdown is above other elements */
   }
-  
+
   /* Mobile-specific styles */
   @media (max-width: 768px) {
 	.dropdown-menu {

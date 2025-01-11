@@ -13,9 +13,11 @@ async function loadImages() {
 
 		// Iterate over the image file names and create elements
 		images.forEach((image) => {
+			// Create the masonry-item div
 			const masonryItem = document.createElement("div");
 			masonryItem.className = "masonry-item";
 
+			// Create the image element
 			const imgElement = document.createElement("img");
 			imgElement.src = image.path;
 			imgElement.alt = image.path
@@ -25,22 +27,23 @@ async function loadImages() {
 				.replace(/[-_]/g, " ") // Replace hyphens and underscores with spaces
 				.replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize the first letter of each word
 
-			// Create a category tag
-			const categoryTag = document.createElement("span");
-			categoryTag.className = "category-tag";
-			categoryTag.textContent = image.category;
+			// Create the description overlay div
+			const description = document.createElement("div");
+			description.className = "description";
+			description.innerHTML = image.description.replace("\n", "<br>"); // Format description text
 
-			// Append the image and category to the masonry item
+			// Append the image, description, and category to the masonry item
 			masonryItem.appendChild(imgElement);
+			masonryItem.appendChild(description);
 			masonryItem.appendChild(categoryTag);
+
+			// Append the masonry item to the container
 			masonryContainer.appendChild(masonryItem);
 		});
 	} catch (error) {
 		console.error("Error loading images:", error);
 	}
 }
-
-
 
 // Call the function to load images
 loadImages();
