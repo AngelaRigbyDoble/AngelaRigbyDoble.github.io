@@ -21,16 +21,15 @@ body {
 }
 
 .masonry {
-    column-count: 3; /* Number of columns */
-    column-gap: 10px; /* Space between columns */
-    margin: 20px;
+	column-gap: 10px; /* Space between columns */
+	margin: 5%;
 }
 
 .masonry-item {
-    break-inside: avoid; /* Avoid breaking the item */
-    margin-bottom: 20px; /* Space between rows */
-    position: relative;
-    overflow: hidden;
+	break-inside: avoid; /* Avoid breaking the item */
+	margin-bottom: 20px; /* Space between rows */
+	position: relative;
+	overflow: hidden;
 }
 
 .masonry-item img {
