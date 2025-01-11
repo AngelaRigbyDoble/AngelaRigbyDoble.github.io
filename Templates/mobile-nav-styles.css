@@ -57,19 +57,21 @@ nav.mobile-nav {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	background-color: grey;
+	background-color: white
   }
   
-  .dropdown-menu li a {
-	padding: 10px;
-	text-decoration: none;
-	font-size: 16px;
-  }
-  
-  .dropdown-menu li a:hover {
-	background-color: #D3D3D3;
-  }
-  
+/* Ensure the <a> element fills the entire menu item */
+.dropdown-menu li a {
+    display: block; /* Make the <a> element a block-level element */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    text-decoration: none; /* Remove underline if present */
+}
+
+/* Apply background color when hovering over the <a> element */
+.dropdown-menu li a:hover { 
+    background-color: #D3D3D3; /* The background color on hover */
+}
+
   /* Show the dropdown menu when clicked */
   .dropdown.active .dropdown-menu {
 	display: block;

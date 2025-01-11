@@ -55,7 +55,7 @@ nav {
 	top: 100%; /* Position dropdown below the parent menu */
 	left: 0;
 	text-align: left;
-	translate: -20% 0%;
+	translate: -36% 0%;
 	z-index: 1000; /* Ensure the dropdown is above other elements */
   }
 
