@@ -1,33 +1,75 @@
-// Fetch the JSON data (replace with your correct path to images.json)
-fetch('images.json')
-    .then(response => response.json()) // Parse JSON data
-    .then(imageData => {
-        const masonryContainer = document.querySelector('.masonry');
+// Function to render all images (for default view)
+function renderAllImages() {
+    fetch('images.json')
+        .then(response => response.json()) // Parse JSON data
+        .then(imageData => {
+            const masonryContainer = document.querySelector('.masonry');
+            masonryContainer.innerHTML = ''; // Clear previous images
 
-        // Loop through each image object in the JSON data
-        imageData.forEach(item => {
-            // Create the masonry-item div
-            const masonryItem = document.createElement('div');
-            masonryItem.classList.add('masonry-item');
+            // Loop through each image object and append to masonry container
+            imageData.forEach(item => {
+                const masonryItem = document.createElement('div');
+                masonryItem.classList.add('masonry-item');
 
-            // Create the image element
-            const img = document.createElement('img');
-            img.src = item.path;
-            img.alt = item.category;
+                const img = document.createElement('img');
+                img.src = item.path;
+                img.alt = item.category;
 
-            // Create the description div
-            const description = document.createElement('div');
-            description.classList.add('description');
-            description.innerHTML = item.description.replace('\n', '<br>');  // Format the description text
+                const description = document.createElement('div');
+                description.classList.add('description');
+                description.innerHTML = item.description.replace('\n', '<br>');
 
-            // Append the image and description to the masonry-item
-            masonryItem.appendChild(img);
-            masonryItem.appendChild(description);
+                masonryItem.appendChild(img);
+                masonryItem.appendChild(description);
 
-            // Append the masonry-item to the container
-            masonryContainer.appendChild(masonryItem);
+                masonryContainer.appendChild(masonryItem);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading JSON:', error);
         });
-    })
-    .catch(error => {
-        console.error('Error loading JSON:', error);
-    });
+}
+
+// Function to filter images by category
+function filterImagesByCategory(category) {
+    fetch('images.json')
+        .then(response => response.json()) // Parse JSON data
+        .then(imageData => {
+            const masonryContainer = document.querySelector('.masonry');
+            masonryContainer.innerHTML = ''; // Clear previous images
+
+            // Filter images based on the selected category
+            const filteredImages = imageData.filter(item => item.category === category || category === 'all');
+
+            // Loop through each filtered image and append to masonry container
+            filteredImages.forEach(item => {
+                const masonryItem = document.createElement('div');
+                masonryItem.classList.add('masonry-item');
+
+                const img = document.createElement('img');
+                img.src = item.path;
+                img.alt = item.category;
+
+                const description = document.createElement('div');
+                description.classList.add('description');
+                description.innerHTML = item.description.replace('\n', '<br>');
+
+                masonryItem.appendChild(img);
+                masonryItem.appendChild(description);
+
+                masonryContainer.appendChild(masonryItem);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading JSON:', error);
+        });
+}
+
+// Call renderAllImages to load all images by default
+renderAllImages();
+
+// Event listener to handle category filter selection
+document.querySelector('#categoryFilter').addEventListener('change', (event) => {
+    const selectedCategory = event.target.value;
+    filterImagesByCategory(selectedCategory); // Update images based on selected category
+});

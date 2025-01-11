@@ -13,7 +13,11 @@ nav.mobile-nav {
   
   .menu-toggle {
 	font-size: 30px;
-	color: black;
+	color: white;
+	background-color: black;
+	border: 5px solid black; /* Optional: Add border for clarity */
+	padding: 5px;
+	border-radius: 5px;
 	cursor: pointer;
   }
   
@@ -23,7 +27,7 @@ nav.mobile-nav {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	background-color: grey;
+	background-color: white;
 	width: 100%;
 	position: absolute;
 	top: 0;
@@ -34,10 +38,11 @@ nav.mobile-nav {
   
   .mobile-nav-list li {
 	padding: 10px 0;
+	border: 1px solid black; /* Optional: Add border for clarity */
   }
   
   .mobile-nav-list li a {
-	color: white;
+	color: black;
 	text-decoration: none;
 	font-size: 18px;
   }
@@ -52,7 +57,7 @@ nav.mobile-nav {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	background-color: #1c1c2c;
+	background-color: grey;
   }
   
   .dropdown-menu li a {
