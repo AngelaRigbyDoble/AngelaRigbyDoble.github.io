@@ -1,49 +1,33 @@
-async function loadImages() {
-	try {
-		// Fetch the JSON file
-		const response = await fetch("images.json");
-		if (!response.ok) {
-			throw new Error(`Failed to load images: ${response.statusText}`);
-		}
+// Fetch the JSON data (replace with your correct path to images.json)
+fetch('images.json')
+    .then(response => response.json()) // Parse JSON data
+    .then(imageData => {
+        const masonryContainer = document.querySelector('.masonry');
 
-		const images = await response.json(); // Parse the JSON data
+        // Loop through each image object in the JSON data
+        imageData.forEach(item => {
+            // Create the masonry-item div
+            const masonryItem = document.createElement('div');
+            masonryItem.classList.add('masonry-item');
 
-		// Get the masonry container
-		const masonryContainer = document.querySelector(".masonry");
+            // Create the image element
+            const img = document.createElement('img');
+            img.src = item.path;
+            img.alt = item.category;
 
-		// Iterate over the image file names and create elements
-		images.forEach((image) => {
-			// Create the masonry-item div
-			const masonryItem = document.createElement("div");
-			masonryItem.className = "masonry-item";
+            // Create the description div
+            const description = document.createElement('div');
+            description.classList.add('description');
+            description.innerHTML = item.description.replace('\n', '<br>');  // Format the description text
 
-			// Create the image element
-			const imgElement = document.createElement("img");
-			imgElement.src = image.path;
-			imgElement.alt = image.path
-				.split("/")
-				.pop()
-				.replace(/\.[^/.]+$/, "") // Remove file extension
-				.replace(/[-_]/g, " ") // Replace hyphens and underscores with spaces
-				.replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize the first letter of each word
+            // Append the image and description to the masonry-item
+            masonryItem.appendChild(img);
+            masonryItem.appendChild(description);
 
-			// Create the description overlay div
-			const description = document.createElement("div");
-			description.className = "description";
-			description.innerHTML = image.description.replace("\n", "<br>"); // Format description text
-
-			// Append the image, description, and category to the masonry item
-			masonryItem.appendChild(imgElement);
-			masonryItem.appendChild(description);
-			masonryItem.appendChild(categoryTag);
-
-			// Append the masonry item to the container
-			masonryContainer.appendChild(masonryItem);
-		});
-	} catch (error) {
-		console.error("Error loading images:", error);
-	}
-}
-
-// Call the function to load images
-loadImages();
+            // Append the masonry-item to the container
+            masonryContainer.appendChild(masonryItem);
+        });
+    })
+    .catch(error => {
+        console.error('Error loading JSON:', error);
+    });
