@@ -1,7 +1,7 @@
 nav {
     background-color: white;
     padding: 1em 0; /* Space above and below the nav content */
-    border-bottom: 1px solid #ccc; /* Grey line under the nav */
+    border-bottom: 1px solid black; /* Grey line under the nav */
     text-align: center; /* Center-align text/content inside the nav */
     box-sizing: border-box; /* Include padding and border in the element's dimensions */
 }
