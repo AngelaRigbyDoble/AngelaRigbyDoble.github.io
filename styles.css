@@ -16,8 +16,11 @@ body {
 
 .homepage-bulletpoints {
 	margin: 2% 10% 2%;
-	padding: 2px;
+	padding: 2%;
 	font-size: clamp(1rem, 1.8vw, 1.8rem);
+  gap: 5%;
+  align-items: normal;
+	justify-content: normal;
 }
 
 .external-button {
@@ -39,7 +42,7 @@ body {
 }
 
 .about-button {
-  text-align: left       /* Center the button */
+  text-align: left;
   margin: 20px 0;
   padding-left: 20px;
 }
@@ -156,6 +159,10 @@ body {
 	.about-container {
 		flex-direction: column;
 	}
+
+  .bulletpoints {
+    width: 50%;
+  }
 }
 
 .about-left-column {
