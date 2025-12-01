@@ -22,14 +22,15 @@ body {
 
 .external-button {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 10px 20px;
   background-color: #000;   /* Black background */
   color: #fff;              /* White text */
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Lato", sans-serif;
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
 }
 
 .external-button:hover {
@@ -341,6 +342,7 @@ a {
   justify-content: space-between;
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 1%;
   gap: 2%
 }
 
@@ -406,15 +408,11 @@ a {
 
 /* Accordion style */
 .writing-accordion summary {
-    background-color: white;   
-      border: 2px solid black;     /* match your box colour or change */
-    padding: 15px 20px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    list-style: none;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
 }
 
 .writing-accordion summary::-webkit-details-marker {
@@ -431,15 +429,22 @@ a {
 
 
 /* Content inside the accordion */
-.writing-accordion details p {
-    background: white;
-    padding: 15px 20px;
-    margin: 0 0 10px;
-    border-radius: 0 0 8px 8px;
-    line-height: 1.6;
-    font-size: 1rem;
+.writing-accordion details {
+  font-family: sans-serif;
+  border: 2px solid black;     /* match your box colour or change */
+  border-radius: 8px;
+  margin: 0.5rem;
+  
+}
+
+.writing-accordion details:hover {
+  box-shadow: 2px 2px 2px 1px #bdbdbe
 }
 
 .writing-accordion p{
   white-space: pre-line;
+  padding: 1rem;
+  margin: 0;
+  background-color: #e6e6e6;
+  border-radius: 8px;
 }
