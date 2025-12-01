@@ -77,6 +77,30 @@ body {
       margin: 2%; /* Further reduce margin for smaller devices */
   }
 
+  .masonry-item .description {
+    display: none;
+}
+
+/* Optional: keep hover for desktop */
+@media (min-width: 769px) {
+    .masonry-item:hover .description {
+        display: flex;
+    }
+}
+
+/* For mobile, initially hide description */
+@media (max-width: 768px) {
+    .masonry-item .description {
+        display: none;
+    }
+
+    /* Optional: expand image when active */
+    .masonry-item.active img {
+        transform: scale(1.1); /* slightly bigger */
+        z-index: 5;            /* appear above others */
+        position: relative;
+    }
+}
   .masonry-item img {
       transition: none; /* Disable scaling on hover for smaller screens */
   }
@@ -130,11 +154,20 @@ body {
 }
 
 .about-image {
-	max-width: 100%; /* Responsive image */
-	height: auto; /* Maintain aspect ratio */
-  display: flex;
-  align-items: center;
+  width: 80%;        /* Make image larger on desktop */
+  max-width: 600px;  /* Limit maximum size so it doesn’t get huge */
+  height: auto;      /* Maintain aspect ratio */
+  display: block;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-image {
+    width: 80%;     /* Full width on smaller screens */
+    max-width: 80%; /* Remove desktop max-width limit */
+  }
+}
+
 
 .sales-content {
 	display: flex;
