@@ -20,11 +20,36 @@ body {
 	font-size: clamp(1rem, 1.8vw, 1.8rem);
 }
 
-/* Masonry layout */
-.masonry {
-  column-gap: 10px;
-  margin: 1% 5%; /* Adjust margin for smaller screens */
+.external-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #000;   /* Black background */
+  color: #fff;              /* White text */
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.external-button:hover {
+  background-color: #333;   /* Dark gray on hover */
+  transform: scale(1.05);   /* Subtle zoom */
+}
+
+.about-button {
+  text-align: left       /* Center the button */
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-button {
+    margin-left: 10%; /* Add left margin on mobile */
+    margin-bottom: 20px; /* Optional: keep some right margin */
+  }
+}
+
 
 /* Masonry item */
 .masonry-item {
@@ -106,9 +131,12 @@ body {
   }
 
   .masonry-item .description {
-      display: flex; /* Always show text on smaller screens */
       font-size: 16px; /* Adjust font size for better readability */
       padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .masonry-item .description:active {
+    display: block;
   }
 }
 

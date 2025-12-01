@@ -73,3 +73,13 @@ document.querySelector('#categoryFilter').addEventListener('change', (event) => 
     const selectedCategory = event.target.value;
     filterImagesByCategory(selectedCategory); // Update images based on selected category
 });
+
+// Make "active" when clicked for mobile.
+const masonryContainer = document.querySelector('.masonry');
+
+masonryContainer.addEventListener('click', (e) => {
+    const item = e.target.closest('.masonry-item');
+    if (item) {
+        item.classList.toggle('active');
+    }
+});
