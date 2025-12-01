@@ -309,3 +309,76 @@ a {
 .social-media-icons a:hover {
   color: gray; /* Change color on hover */
 }
+
+.writing-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.the-deep-darkness {
+    padding: 30px;               /* space inside the box */
+    border:2px solid black;       /* rounded corners */
+    max-width: 700px;            /* controls box width */
+    margin: 40px auto;           /* centers the box on the page */
+    text-align: center;          /* centers the text inside */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* optional soft shadow */
+}
+
+.the-deep-darkness h3 {
+ color: black;
+}
+
+  .the-deep-darkness p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black;
+}
+
+.writing-accordion {
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: left; /* keep text readable, not centered */
+}
+
+/* Accordion style */
+.writing-accordion summary {
+    background-color: white;   
+      border: 2px solid black;     /* match your box colour or change */
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    list-style: none;
+}
+
+.writing-accordion summary::-webkit-details-marker {
+    display: none; /* hides default disclosure arrow */
+}
+
+/* Optional custom arrow */
+.writing-accordion summary::after {
+    content: "▼";
+    float: right;
+    transition: transform 0.2s ease;
+    color: black
+}
+
+
+/* Content inside the accordion */
+.writing-accordion details p {
+    background: white;
+    padding: 15px 20px;
+    margin: 0 0 10px;
+    border-radius: 0 0 8px 8px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.writing-accordion p{
+  white-space: pre-line;
+}
